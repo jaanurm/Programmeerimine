@@ -7,7 +7,7 @@ Perekonnanimi = Perekonnanimi.upper()
 
 print Eesnimi.upper();
 print Perekonnanimi.lower();
-print Eesnimi.capitalized();
+print Eesnimi.capitalize();
 print Perekonnanimi.join();
 print Perekonnanimi.center();
 
