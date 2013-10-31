@@ -2,13 +2,16 @@ print "Tere"
 Eesnimi = raw_input('Mis su eesnimi on?:')
 Perekonnanimi = raw_input('Mis su perekonnanimi on?:')
 
-Eesnimi = eesnimi.upper()
-Perekonnanimi = perekonnanimi.upper()
+Eesnimi = Eesnimi.upper()
+Perekonnanimi = Perekonnanimi.upper()
 
 print Eesnimi.upper();
 print Perekonnanimi.lower();
+print Eesnimi.capitalized();
+print Perekonnanimi.join();
 
-if Eesnimi == "Jaan-Edgar": and Perekonnanimi == "Urm":
+
+if Eesnimi == "Jaan-Edgar":
 	print "Sinu nimi on " + Eesnimi + " " + Perekonnanimi
 else:
 
