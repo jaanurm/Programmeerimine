@@ -1,0 +1,15 @@
+print "Tere"
+Eesnimi = raw_input('Mis su eesnimi on?:')
+Perekonnanimi = raw_input('Mis su perekonnanimi on?:')
+
+Eesnimi = eesnimi.upper()
+Perekonnanimi = perekonnanimi.upper()
+
+print Eesnimi.upper();
+print Perekonnanimi.lower();
+
+if Eesnimi == "Jaan-Edgar": and Perekonnanimi == "Urm":
+	print "Sinu nimi on " + Eesnimi + " " + Perekonnanimi
+else:
+
+	print "ei tunne sind"
