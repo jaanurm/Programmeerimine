@@ -9,6 +9,7 @@ print Eesnimi.upper();
 print Perekonnanimi.lower();
 print Eesnimi.capitalized();
 print Perekonnanimi.join();
+print Perekonnanimi.center();
 
 
 if Eesnimi == "Jaan-Edgar":
