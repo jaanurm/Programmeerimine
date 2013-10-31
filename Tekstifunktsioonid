@@ -1,0 +1,71 @@
+text = "[ Pealkiri E-kiri kirikakar ]"
+print " ", text.capitalize()
+print " ", text.count ("i")
+print " ", text.center(50, "=")
+
+filename = raw_input("Sisesta failinimi: ")
+if filename.endswith(".py"):
+	print " ", ("Jee, ongi Python'i failinimi:")
+
+text = "LAMBIIIIIIIIIIIIIIIIIIIIIIIIIIIIII, sit, IIIIST"
+print "", text.find("sit")
+
+klass= "anton algis madis anna"
+if "algis" in klass:
+	print "", "Algis t2na ei puudu :)"
+
+text = "abc1"
+print text.isalnum()
+print text.isalpha()
+
+str = "N2idis";
+
+print str.zfill(40);
+print str.zfill(50);
+
+str = "N2idis";
+
+print str.upper()
+
+str = "N2idis";
+
+print str.title()
+
+str = "0000000N2idis!!!0000000";
+print str.strip( '0' );
+
+str = "this is string this example....wow!!!";
+print str.startswith( 'this' );
+print str.startswith( 'is', 2 , 4 );
+print str.startswith( 'th', 0, );
+
+str = "Line1-abcdef \nLine2-abc \nLine4-abcd";
+print str.split( );
+print str.split(' ', 1 );
+
+str = "     this is string example....wow!!!     ";
+print str.rstrip();
+str = "88888888this is string example....wow!!!8888888";
+print str.rstrip('8');
+
+str = "this is string example....wow!!!";
+
+print str.rjust(50, '0');
+
+str = "this is really a string example....wow!!!";
+str = "is";
+
+print str.rfind(str);
+print str.rfind(str, 0, 10);
+print str.rfind(str, 10, 0);
+
+print str.find(str);
+print str.find(str, 0, 10);
+print str.find(str, 10, 0);
+
+str1 = "this is string example....wow!!!";
+str2 = "is";
+
+print str1.rindex(str2);
+print str1.index(str2);
+
