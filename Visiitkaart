@@ -1,0 +1,16 @@
+tyhi = ' '
+v6rdusm2rk = '='
+
+ettevote = raw_input('Sisestage oma ettev6tte nimi: ')
+nimi = raw_input('Sisestage oma ees-ja perekonnanimi: ')
+amet = raw_input('Sisestage oma amet: ')
+
+print v6rdusm2rk.center(40,'=')
+print '|', tyhi.center(36,' '), '|'
+print '|', tyhi.center(36,' '), '|'
+print '|', nimi.center(36,' '), '|'
+print '|', ettevote.center(36,' '), '|'
+print '|', amet.center(36,' '), '|'
+print '|', tyhi.center(36,' '), '|'
+print '|', tyhi.center(36,' '), '|'
+print  v6rdusm2rk.center(40,'=')
