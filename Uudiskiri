@@ -1,0 +1,16 @@
+p2is= 'P2is'
+jalus= 'Jalus'
+tyhi = ""
+tiitel = 'Tiitel'
+l6ik1 = "Siga sittus sinni-vinni hapukurk j2i perse kinni. "
+l6ik2 = "Kui ta selle lahti sai oli perse suur ja lai. Suur ja lai on maa mis on mu kodu. "
+
+print p2is.center(80, "-")
+print tiitel.center(80, " ")
+print tyhi.center(45, " ")
+print l6ik1.center(45, " ")
+print tyhi.center(45, " ")
+print tiitel.center(80, " ")
+print tyhi.center(45, " ")
+print l6ik2.center(45, " ")
+print jalus.center(80, "-")
