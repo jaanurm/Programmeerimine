@@ -1,0 +1,24 @@
+#Teine ulesanne
+num1 = raw_input("Palun sisestage 1 komaga number. ")
+num2 = float(num1)
+
+juur = num2 ** 0.5
+juur = str
+print "Ruutjuur arvust "+str(num2)+" on " +str(num2 ** 0.5)
+
+ul2 = (num2+1)/(num2-1) ** (1/3.0)
+
+print ul2
+
+#esimene ulesanne
+Tekst1 = raw_input("Palun sisestage esimene tekst. ")
+Tekst2 = raw_input("Palun sisestage teine tekst. ")
+
+if Tekst2.find(Tekst1):
+	print "Teises tekstis ei sisaldu esimest teksti."
+else:
+	print "Teises tekstis sisaldub esimene tekst."
+
+uus = Tekst1 +" "+ Tekst2
+
+print uus.upper().center(80)
