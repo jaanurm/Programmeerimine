@@ -1,0 +1,27 @@
+x1= 19
+y1= 11
+r1= 5
+
+x2= 25
+y2= 23
+r2= 19
+
+x= 32
+y=32
+
+dx1 = x1 - x
+dy1 = y1 - y
+dx2 = x2 - x
+dy2 = y1 - y
+
+d1 = (dx1**2 + dy1**2) ** 0,5
+d1 = (dx2**2 + dy2**2) ** 0,5
+
+p1 = d1 < r1
+p2 = d2 < r2
+
+if (p1 and not p2) or (p1 and not p2) :
+
+	print "punkt ({},{}) asub ringis.".format(x,y)
+else:
+	print "asub vahemikus"
