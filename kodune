@@ -1,0 +1,11 @@
+import os
+import random
+clear = os.system('clear');
+
+z= 1
+b= '#'
+x = 5
+
+while z <=x:
+	print '#' * random.randint(10,40)
+	z=z+1
