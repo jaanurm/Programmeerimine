@@ -3,9 +3,9 @@ import random
 clear = os.system('clear');
 
 z= 1
-b= '#'
+y= '#'
 x = 5
 
 while z <=x:
-	print '#' * random.randint(10,40)
+	print '#' * random.randint(22,55)
 	z=z+1
