@@ -2,32 +2,40 @@
 import os
 clear = os.system('clear');
 #1
-#1) kontrollida, kas teksti sisaldab 'a' ja 'b' või 'c' ja 'd'.
-text = raw_input('Siesesta tekst: ')
-if ('a' in text and 'b' in text) or ('c' in text and 'd' in text):
-print 'Tekstis on kas a ja b või c ja d'
-else:
-print 'Tekstis pole kas a ja b või c ja d'
+#1) Kontrollida, kas tekst sisaldab ('a', 'b' või 'c') ja ei sisaldu ('d' või 'e').
+text = raw_input('siesesta text: ')
+if ('a' in text or 'b' in text or 'c' in text) and not ('d' in text or 'e' in text):
+    print 'on'
 #2
-a = raw_input('Täisarv ')
-if int(a) <= 1000 and 0 <= int(a): # viga on selles et and asemel oli or ja oli vaja täisarvuks teisendada
+a = int(raw_input('Koma-arv: '))
+if (0 <=a) and (a <= 1.0): # kontrollib kas 0 <= a boolean on väiksem kui 1.0
 print 'ok'
 #3
-arvutus = -(2 * 1) * 3 ** 2 / 4 * (1 + 1.0)
-print '-2 * -1 * 3 ** 2 / 4 * (1 + 1.0)'
-print '2 * 3 ** 2 / 4 * (1 + 1.0)'
-print '6 ** 2 / 4 * (1 + 1.0)'
-print '36 / 4 * (1 + 1.0)'
-print '9 * (1 + 1.0)'
-print '9 * 2.0'
-print '18.0'
-print 'vastus: ', -(2 * 1) * 3 ** 2 / 4 * (1 + 1.0)
+arvutus = ((2 + 3) * (4 + 5.0 / 2) * (2 ** (4 - 2*2)) * - (float(1))
+print '(5 * (4 + 5.0 / 2) * (2 ** (4 - 2*2)) * - (float(1))'
+print '(5 * (4 + 2.5) * (2 ** (4 - 2*2)) * - (float(1))'
+print '(5 * 6.5 * (2 ** (4 - 2*2)) * - (float(1))'
+print '(32.5 * (2 ** (4 - 2*2)) * - (float(1))'
+print '(32.5 * (2 ** (4 - 4)) * - (float(1))'
+print '(32.5 * (2 ** 0) * - (float(1))'
+print '(32.5 * 1 * - (float(1))'
+print '(32.5 * 1 * - 1.0)'
+print '(32.5*-1.0)'
+print '(-32.5)'
+print 'vastus: ', ((2 + 3) * (4 + 5.0 / 2) * (2 ** (4 - 2*2)) * - (float(1))
 #4
-print ">>> int(1)+int(1), int(1)+float(1), float(1)+int(1), float(1)+float(1)"
-print "(2, 2.0, 2.0, 2.0)"
+print ">>> int(1)/int(1), int(1)/float(1), float(1)/int(1), float(1)/float(1)"
+print ">>> int(1)*int(1), int(1)*float(1), float(1)*int(1), float(1)*float(1)"
+print "(1, 1.0, 1.0, 1.0)"
 #5
-a = ‘asdfkjsadjflksadflkasdlfklasjdlkjfas’ #annab a'le tekstilise väärtuse
-z1 = len(a) > 5 #z1 väärtus on boolean mis on tõene kui a pikkus on suurem kui 5
-z2 = ‘q’ in a or ‘z’ in a #z2 väärtus n boolean mis on tõene kui q täht on a's või z tät on a's
-if z1 and not z2: # kui z1 ja z2 on mõlemad negatiivsed teostatakse järgnev rida
-print “ok” #ilmutatakse ok 
+a = raw_input(‘Text:’)#kasutaja sisestab teksti
+u = a.isupper()#kontrollib, kas tekstis on suurt2hti
+l = a.islower()#kontrollib, kas tekstis on väiketähti
+n = a.count(‘0’) + a.count(‘1’) + a.count(‘2’) + … + a.count(‘9’)#loeb mitu arvu on
+s = len(a)#a pikkus
+if not u and not l and n > 1 and s >= 8:
+    print “ok”
+#kui a ei ole suured ja ei ole v2iksed t2hed ja numbreid on rohkem kui 1 ja a pikkus on suurem v6i v6rdne 8 siis prindib ok
+
+
+
